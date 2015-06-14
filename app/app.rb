@@ -9,3 +9,6 @@ post '/photo' do
   return 200, ''
 end
 
+get 'healthcheck' do
+  return 200, 'alive'
+end
