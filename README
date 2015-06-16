@@ -1,2 +1,4 @@
-gem install sinatra
-ruby myapp.rb
+$ git clone https://github.com/ma-aizawa/file-receiver.git
+$ cd file-receiver
+$ gem install rack sinatra
+$ rackup config.ru
