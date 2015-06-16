@@ -1,6 +1,6 @@
 require 'sinatra'
 
-set :environment, :production
+set :bind, '0.0.0.0'
 
 post '/photo' do
   return 400, 'NG' unless params[:file]
