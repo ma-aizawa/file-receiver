@@ -1,5 +1,7 @@
 require 'sinatra'
 
+puts settings.environment
+
 post '/photo' do
   return 400, 'NG' unless params[:file]
 
