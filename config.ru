@@ -1,8 +1,8 @@
 require 'rubygems'
 require 'sinatra'
 require './app.rb'
-set :environment, :production
-set :bind, '0.0.0.0'
+
+set :environment, (ENV['RACK_ENV'] || :development)
 
 run Sinatra::Application
 
